@@ -5,30 +5,39 @@ package models;
 public class Note {
     
     String title;
-    String message;
+    String contents;
 
-    public Note() {
-    }
+    public Note() {}
 
-    public Note(String title, String message) {
+    public Note(String title, String contents) {
+        
         this.title = title;
-        this.message = message;
+        this.contents = contents;
+        
     }
 
     public String getTitle() {
+        
         return title;
+        
     }
-
+    
+    public String getContents() {
+        
+        return contents;
+        
+    }
+    
     public void setTitle(String title) {
+        
         this.title = title;
+        
     }
 
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
+    public void setContents(String contents) {
+        
+        this.contents = contents;
+        
     }
     
 }
